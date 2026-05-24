@@ -36,6 +36,7 @@ The writing machine takes a standard digital image, processes it to extract boun
 
 > **Hardware:** STM32 driving the servos based on Python serial data.
 ![Hardware Demo](link-to-your-hardware.gif)
+<img width="400" height="465" alt="demo" src="https://github.com/user-attachments/assets/a8fd8f33-ff75-4bba-940c-a3521f3440be" />
 
 ---
 
