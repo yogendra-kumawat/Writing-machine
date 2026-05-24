@@ -100,4 +100,3 @@ The microcontroller code relies on the STM32 HAL library:
 5. Open `main.ipynb`, set your `PORT` to the correct COM port, and run the notebook.
 
 ---
-*Built by [Your Name/GitHub Handle]*
