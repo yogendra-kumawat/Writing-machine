@@ -61,16 +61,16 @@ void setServoAngle(int angle1,int angle2,int angle3) {
    int pulse1 = ((angle1 * (maxPulseWidth - minPulseWidth)) / 180) + minPulseWidth;
    int pulse2 = ((angle2 * (maxPulseWidth - minPulseWidth)) / 180) + minPulseWidth;
    int pulse3 = ((angle3 * (maxPulseWidth - minPulseWidth)) / 180) + minPulseWidth;
-   __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, pulse1);
+   __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1, pulse1);
    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, pulse2);
-   __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, pulse3);
+   __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3,pulse3);
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     if (huart->Instance == USART1) // Check if interrupt is from UART1
     {
-        // 1. Process your data (e.g., toggle an LED if 'A' is received)
+        // 1. Process the data (check., toggle an LED if 'A' is received)
 
         if (rx_data[0] == 'A') {
             HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
@@ -79,9 +79,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
         int angle2=(rx_data[4]-48)*100+(rx_data[5]-48)*10+(rx_data[6]-48);
         int angle3=(rx_data[7]-48)*100+(rx_data[8]-48)*10+(rx_data[9]-48);
         setServoAngle( angle1, angle2, angle3);
-        // 2. RESTART the interrupt
-        // This is critical; otherwise, the interrupt only fires once.
-        HAL_UART_Receive_IT(&huart1, rx_data,10);
+        // 2. RESTARTING the interrupt
+         HAL_UART_Receive_IT(&huart1, rx_data,10);
 
 
     }
