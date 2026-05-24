@@ -8,7 +8,7 @@ This repository contains the software and firmware for a 2-dimensional robotic a
 
 ---
 
-## 🧭 Interactive Table of Contents
+## 🧭 Table of Contents
 * [1. Project Overview](#-project-overview)
 * [2. See it in Action](#-see-it-in-action)
 * [3. The Math (Inverse Kinematics)](#-the-math-inverse-kinematics)
@@ -29,12 +29,11 @@ The writing machine takes a standard digital image, processes it to extract boun
 ---
 
 ## 🎥 See it in Action
-
-*(Upload a .gif of your screen showing the OpenCV simulation here)*
 > **Simulation:** Python calculating paths and tracing boundaries.
 ![Simulation Demo](link-to-your-simulation.gif)
 
-*(Upload a .gif of the actual physical arm drawing here)*
+<img width="400" height="426" alt="Screencast from 2026-05-24 15-42-42" src="https://github.com/user-attachments/assets/503035b1-7002-4cca-af6f-d6f27de53404" />
+
 > **Hardware:** STM32 driving the servos based on Python serial data.
 ![Hardware Demo](link-to-your-hardware.gif)
 
