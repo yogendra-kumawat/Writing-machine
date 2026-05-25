@@ -167,7 +167,7 @@ Standard servos require a pulse width between **1 ms** (0°) and **2 ms** (180°
 void setServoAngle(int angle1, int angle2, int angle3)
 {
     int minPulseWidth = 1000; // 1 ms
-    int maxPulseWidth = 5000; // 2 ms (scaled to timer resolution)
+    int maxPulseWidth = 2000; // 2 ms (scaled to timer resolution)
 
     int pulse1 = ((angle1 * (maxPulseWidth - minPulseWidth)) / 180) + minPulseWidth;
     int pulse2 = ((angle2 * (maxPulseWidth - minPulseWidth)) / 180) + minPulseWidth;
