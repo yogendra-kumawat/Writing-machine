@@ -1,0 +1,4 @@
+opencv-python
+pyserial
+numpy
+jupyter
