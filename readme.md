@@ -227,8 +227,8 @@ pip install opencv-python pyserial numpy jupyter
 
 1. **Clone** this repository:
    ```bash
-   git clone https://github.com/your-username/polar-arm-writer.git
-   cd polar-arm-writer
+   git clone https://github.com/yogendra-kumawat/Writing-machine.git
+cd Writing-machine
    ```
 
 2. **Flash** the firmware to your STM32 using **STM32CubeIDE** (`firmware/main.c`).
